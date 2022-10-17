@@ -1,0 +1,53 @@
+// Blocks
+@import ../blocks/home-section
+@import ../blocks/about-section
+@import ../blocks/skill-section
+@import ../blocks/qualification-section
+@import ../blocks/projects-section
+@import ../blocks/scroll-to-top
+
+.section
+  padding: 2rem 0 4rem
+
+  @media screen and (min-width: 768px)
+    padding: 6rem 0 2rem
+
+  &__title, &__subtitle
+    text-align: center
+
+  &__title
+    font-size: var(--h1-size)
+  
+  &__subtitle
+    display: block
+    font-size: var(--small-size)
+    margin-bottom: 3rem
+    color: $color-text
+
+    @media screen and (min-width: 768px)
+      margin-bottom: 4rem
+
+.container
+  max-width: 768px
+  padding-left: 1.5rem
+  padding-right: 1.5rem
+  margin-left: auto
+  margin-right: auto
+
+  @media screen and (max-width: 340px)
+    padding-left: 1rem
+    padding-right: 1rem
+
+  @media screen and (min-width: 1024px)
+    max-width: 1024px
+
+.grid
+  display: grid
+  gap: 1.5rem
+
+.main
+  @media screen and (min-width: 768px)
+    padding: 0 1rem
+
+  @media screen and (min-width: 1024px)
+    padding: 0

@@ -1,0 +1,91 @@
+.home
+  &__container
+    gap: 1rem
+
+    @media screen and (min-width: 768px)
+      row-gap: 5rem
+
+  &__content
+    grid-template-columns: .5fr 3fr
+    padding-top: 3.5rem
+    align-items: center
+
+    @media screen and (max-width: 340px)
+      grid-template-columns: .25fr 3fr
+
+    @media screen and (min-width: 568px)
+      grid-template-columns: max-content 1fr 1fr
+
+    @media screen and (min-width: 768px)
+      padding-top: 5.5rem
+      column-gap: 2rem
+
+  &__social
+    display: grid
+    grid-template-columns: max-content
+    gap: 1rem 0
+
+    @media screen and (min-width: 1024px)
+      transform: translateX(-6rem)
+
+  &__social-icon
+    font-size: 1.25rem
+    color: $color-theme
+    transition: all .3s
+    &:hover
+      color: $color-theme-dark
+
+  &__blob-img
+    width: 200px
+
+    @media screen and (max-width: 340px)
+      width: 180px
+  
+    @media screen and (min-width: 768px)
+      width: 270px
+
+    @media screen and (min-width: 1024px)
+      width: 320px
+
+  &__info
+    grid-column: 1/3
+
+    @media screen and (min-width: 568px)
+      grid-column: initial
+
+  &__title
+    font-size: var(--big-title)
+
+  &__subtitle
+    font-size: var(--h3-size)
+    font-weight: $font-medium
+    color: $color-text
+    margin-bottom: .75rem
+
+  &__description
+    margin-bottom: 2rem
+
+  &__scroll
+    display: none
+
+    &-button
+      color: $color-theme
+      transition: all .3s
+      &:hover
+        transform: translateY(.25rem)
+
+      @media screen and (min-width: 768px)
+        margin-left: 3rem
+    
+    &-mouse
+      font-size: 2rem
+    
+    &-name
+      font-size: var(--small-size)
+      font-weight: $font-medium
+      color: $color-basic
+      margin-right: .25rem
+      white-space: nowrap
+
+    &-arrow
+      font-size: 1.25rem

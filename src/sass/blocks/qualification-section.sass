@@ -1,0 +1,77 @@
+.qualification
+  [data-content]
+    display: none
+
+  .is-active[data-content]
+    display: block
+
+  &__sections
+    @media screen and (min-width: 568px)
+      display: grid
+      grid-template-columns: .6fr
+      justify-content: center
+
+    @media screen and (min-width: 768px)
+      grid-template-columns: .5fr
+
+  &__tabs
+    display: flex
+    justify-content: space-evenly
+    margin-bottom: 2rem
+
+    @media screen and (min-width: 768px)
+      justify-content: center
+
+  &__button
+    font-size: var(--h3-size)
+    font-weight: $font-medium
+    cursor: pointer
+    transition: all .3s
+    &:hover
+      color: $color-theme
+    
+    @media screen and (min-width: 768px)
+      margin: 0 1rem
+
+    &.is-active
+      color: $color-theme
+
+  &__icon
+    font-size: 1.8rem
+    margin-right: .25rem
+
+  &__data
+    display: grid
+    grid-template-columns: 1fr max-content 1fr
+    gap: 0 1.5rem
+
+    @media screen and (max-width: 340px)
+      gap: .5rem
+
+  &__title
+    font-size: var(--normal-size)
+    font-weight: $font-medium
+
+  &__subtitle
+    display: inline-block
+    font-size: var(--small-size)
+    margin-bottom: 1rem
+    opacity: .8
+
+  &__calendar
+    font-size: var(--smaller-size)
+    color: $color-text
+
+  &__rounder
+    display: inline-block
+    width: 13px
+    height: 13px
+    background-color: $color-theme
+    border-radius: 50%
+
+  &__line
+    display: block
+    width: 1px
+    height: 100%
+    background-color: $color-theme
+    transform: translate(6px, -7px)

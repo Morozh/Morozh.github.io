@@ -1,0 +1,46 @@
+-
+  var navLinks = [
+    {
+      text: 'Home',
+      href: '#home',
+      icon: 'uil uil-estate'
+    },
+    {
+      text: 'About',
+      href: '#about',
+      icon: 'uil uil-user'
+    },
+    {
+      text: 'Skills',
+      href: '#skills',
+      icon: 'uil uil-file-alt'
+    },
+    {
+      text: 'Qualification',
+      href: '#qualification',
+      icon: 'uil uil-book-reader'
+    },
+    {
+      text: 'Projects',
+      href: '#projects',
+      icon: 'uil uil-briefcase'
+    }
+  ];
+
+header.header#header
+  nav.nav.container
+    a.nav__logo(href="#") Rusfolio
+
+    .nav__menu#nav-menu
+      ul.nav__list.grid
+        each item in navLinks
+          li.nav__item 
+            a.nav__link(href=item.href)
+              i.nav__icon(class=item.icon)
+              span= item.text
+
+      i.uil.uil-times.nav__close#nav-close
+    
+    .nav__buttons
+      .nav__toggle#nav-toggle
+        i.uil.uil-apps

@@ -1,0 +1,129 @@
+-
+  var frontendData = [
+    {
+      name: 'HTML/PUG',
+      number: '95%',
+      additionalClass: 'skills__html'
+    },
+    {
+      name: 'CSS/SCSS',
+      number: '90%',
+      additionalClass: 'skills__css'
+    },
+    {
+      name: 'JavaScript/ES6+',
+      number: '85%',
+      additionalClass: 'skills__js'
+    },
+    {
+      name: 'Vue/Vuex',
+      number: '65%',
+      additionalClass: 'skills__vue'
+    }
+  ];
+
+  var backendData = [
+    {
+      name: 'Firebase',
+      number: '55%',
+      additionalClass: 'skills__firebase'
+    },
+    {
+      name: 'PHP',
+      number: '40%',
+      additionalClass: 'skills__php'
+    },
+    {
+      name: 'Yii2',
+      number: '30%',
+      additionalClass: 'skills__yii'
+    },
+    {
+      name: 'SQL',
+      number: '45%',
+      additionalClass: 'skills__sql'
+    }
+  ];
+
+  var designerData = [
+    {
+      name: 'Figma',
+      number: '60%',
+      additionalClass: 'skills__figma'
+    },
+    {
+      name: 'Photoshop',
+      number: '45%',
+      additionalClass: 'skills__photoshop'
+    },
+    {
+      name: 'Adobe XD',
+      number: '50%',
+      additionalClass: 'skills__xd'
+    }
+  ]
+
+section.section.skills#skills
+  h2.section__title Skills
+  span.section__subtitle My technical level 
+
+  .skills__container.container.grid
+    .skills__col
+      .skills__content.is-opened
+        .skills__header
+          i.uil.uil-brackets-curly.skills__icon
+
+          div 
+            h1.skills__title Frontend developer
+            span.skills__subtitle More than 3 years
+
+          i.uil.uil-angle-down.skills__arrow
+          
+        .skills__list.grid
+          each item in frontendData
+            .skills__data
+              .skills__titles
+                h3.skills__name= item.name
+                span.skills__number= item.number
+              .skills__bar
+                span.skills__percentage(class=item.additionalClass)
+
+    .skills__col
+      .skills__content.is-closed
+        .skills__header
+          i.uil.uil-database.skills__icon
+
+          div 
+            h1.skills__title Backend developer
+            span.skills__subtitle More than 1 year of college practice
+
+          i.uil.uil-angle-down.skills__arrow
+          
+        .skills__list.grid
+          each item in backendData
+            .skills__data
+              .skills__titles
+                h3.skills__name= item.name
+                span.skills__number= item.number
+              .skills__bar
+                span.skills__percentage(class=item.additionalClass)
+
+    .skills__col
+      .skills__content.is-closed
+        .skills__header
+          i.uil.uil-icons.skills__icon
+
+          div 
+            h1.skills__title Designer
+            span.skills__subtitle More than 1 year of practice
+
+          i.uil.uil-angle-down.skills__arrow
+          
+        .skills__list.grid
+          each item in designerData
+            .skills__data
+              .skills__titles
+                h3.skills__name= item.name
+                span.skills__number= item.number
+              .skills__bar
+                span.skills__percentage(class=item.additionalClass)

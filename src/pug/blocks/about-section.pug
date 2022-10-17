@@ -1,0 +1,32 @@
+-
+  var aboutData = [
+    {
+      title: '03+',
+      name: 'Years <br /> experience'
+    },
+    {
+      title: '13+',
+      name: 'Completed <br /> projects'
+    },
+    {
+      title: '03+',
+      name: 'Companies <br /> worked'
+    }
+  ];
+
+section.section.about#about
+  h2.section__title About Me
+  span.section__subtitle My introduction 
+
+  .about__container.container.grid
+    img.about__img(src="assets/images/section-img.png", loading="lazy", alt="Ruslan Akopyan")
+
+    .about__info
+      p.about__description Web developer, with extensive knowledge and years of experience, 
+        | working in web technologies and computer science, delivering quality work.
+
+      .about__details
+        each item in aboutData
+          .about__col
+            span.about__details-title!= item.title
+            span.about__details-name!= item.name

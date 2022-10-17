@@ -1,0 +1,63 @@
+-
+  var projectsData = [
+    {
+      img: 'assets/images/logo_sber-fabrika.svg',
+      title: 'Sber Presentation Fabric',
+      description: 'The project designed for SBER managers, which generates presentations according to&nbsp;the specified parameters.',
+      link: 'http://sbr-press.alamics.ru/'
+    },
+    {
+      img: 'assets/images/logo_cz.svg',
+      title: 'Chestny Znak',
+      description: 'A&nbsp;large website for a&nbsp;labeling system company.',
+      link: 'https://честныйзнак.рф/'
+    },
+    {
+      img: 'assets/images/logo_domrf.svg',
+      title: 'Arenda Dom RF',
+      description: 'A&nbsp;project for renting housing in&nbsp;different cities of&nbsp;Russia.',
+      link: 'https://аренда.дом.рф/'
+    },
+    {
+      img: 'assets/images/logo_selvery.svg',
+      title: 'Selvery Promo',
+      description: 'A&nbsp;promo layout for selvery dashboard layout.',
+      link: 'https://selvery.com/'
+    },
+    {
+      img: 'assets/images/logo_VSMPO-AVISMA.svg',
+      title: 'VSMPO AVISMA',
+      description: "A project for one of the world's largest titanium production companies.",
+      link: 'https://www.vsmpo.ru/en/'
+    },
+    {
+      img: 'assets/images/logo_Professionalitet.svg',
+      title: 'Professionalitet',
+      description: "Project for a major educational program in Russia.",
+      link: 'https://xn--n1abdr5c.xn--p1ai/'
+    }
+  ]
+
+section.section.projects#projects
+  h2.section__title Projects
+  span.section__subtitle My recent work
+
+  .projects__container.container.swiper-container
+    .projects__wrapper.swiper-wrapper
+      each item in projectsData
+        .projects__content.grid.swiper-slide
+          img.projects__img(src= item.img, alt= item.title)
+
+          .projects__data
+            h3.projects__title!= item.title
+            p.projects__description!= item.description
+            a.projects__button.button.button_flex.button_small(href= item.link, target="_blank")
+              | Look
+              i.uil.uil-arrow-right.button__icon
+
+    .swiper-button-next
+      i.uil.uil-angle-right-b.swiper-projects-icon
+    .swiper-button-prev
+      i.uil.uil-angle-left-b.swiper-projects-icon
+
+    .swiper-pagination

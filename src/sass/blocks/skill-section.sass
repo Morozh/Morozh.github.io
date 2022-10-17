@@ -1,0 +1,102 @@
+.skills
+  .is-opened &__list
+    height: max-content
+    margin-bottom: 2.5rem
+
+  .is-opened &__arrow
+    transform: rotate(-180deg)
+
+  .is-closed &__list
+    height: 0
+    overflow: hidden
+
+  &__container
+    row-gap: 0
+    
+    @media screen and (min-width: 568px)
+      grid-template-columns: repeat(2, 1fr)
+
+  &__header
+    display: flex
+    align-items: center
+    margin-bottom: 2.5rem
+    cursor: pointer
+
+  &__icon, &__arrow
+    font-size: 2rem
+    color: $color-theme
+
+  &__icon
+    margin-right: .75rem
+  
+  &__title
+    font-size: var(--h3-size)
+
+    @media screen and (max-width: 340px)
+      font-size: var(--normal-size)
+
+  &__subtitle
+    font-size: var(--small-size)
+    color: $color-text
+
+  &__arrow
+    margin-left: auto
+    transition: all .3s
+
+  &__list
+    margin-left: 2.7rem
+    transition: all .3s
+
+  &__titles
+    display: flex
+    justify-content: space-between
+    margin-bottom: .5rem
+
+  &__name
+    font-size: var(--normal-size)
+    font-weight: $font-medium
+
+  &__number
+    color: $color-text
+
+  &__bar, &__percentage
+    height: 6px
+    border-radius: .25rem
+
+  &__bar
+    background-color: $color-theme-lighten
+
+  &__percentage
+    display: block
+    background-color: $color-theme
+    transition: all .3s
+
+  &__html
+    width: 95%
+  
+  &__css
+    width: 90%
+
+  &__js
+    width: 85%
+
+  &__vue
+    width: 65%
+
+  &__firebase
+    width: 55%
+
+  &__php
+    width: 40%
+
+  &__yii
+    width: 30%
+
+  &__sql, &__photoshop
+    width: 45%
+
+  &__figma
+    width: 60%
+  
+  &__xd
+    width: 50%

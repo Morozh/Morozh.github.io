@@ -1,0 +1,74 @@
+.projects
+  &__container
+    position: relative
+
+  &__content
+    padding: 0 1.5rem
+
+    @media screen and (min-width: 568px)
+      grid-template-columns: repeat(2, 1fr)
+
+    @media screen and (min-width: 768px)
+      align-items: center
+
+    @media screen and (min-width: 1024px)
+      column-gap: 5rem !important
+
+  &__img
+    width: 265px
+    min-height: 100px
+    border-radius: .5rem
+    justify-self: center
+
+    @media screen and (min-width: 768px)
+      width: 320px
+
+  &__title
+    font-size: var(--h3-size)
+    margin-bottom: .5rem
+
+  &__description
+    margin-bottom: .75rem
+    color: $color-text
+
+  &__button
+    padding: .75rem 1rem
+    &:hover .button__icon
+      transform: translateX(.25rem)
+      
+.swiper-button-prev
+  &:after
+    content: ''
+
+.swiper-button-next
+  &:after
+    content: ''
+
+.swiper-projects-icon
+  font-size: 2rem
+  color: $color-theme
+
+  @media screen and (min-width: 1024px)
+    font-size: 3.5rem
+
+.swiper-button-next, .swiper-button-prev, .swiper-pagination-bullet
+  outline: none
+
+.swiper-button-prev
+  left: 0.5rem
+
+  @media screen and (min-width: 1024px)
+    left: -3.5rem
+
+.swiper-button-next
+  right: 0.5rem
+
+  @media screen and (min-width: 1024px)
+    right: -3.5rem
+
+.swiper-horizontal
+  .swiper-pagination-bullets
+    bottom: -2.5rem
+
+.swiper-pagination-bullet-active
+  background-color: $color-theme

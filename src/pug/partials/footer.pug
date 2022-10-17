@@ -1,0 +1,35 @@
+-
+  var footerLinks = [
+    {
+      title: 'Skills',
+      link: '#skills'
+    },
+    {
+      title: 'Qualification',
+      link: '#qualification'
+    },
+    {
+      title: 'Projects',
+      link: '#projects'
+    }
+  ];
+
+footer.footer#footer
+  .footer__bg
+    .footer__container.container.grid
+      .footer__col
+        h1.footer__title Ruslan
+        span.footer__subtitle Frontend developer
+      
+      ul.footer__links
+        each item in footerLinks
+          li
+            a.footer__link(href=item.link)= item.title
+
+      .footer__socials
+        a.footer__social(href="https://t.me/morozhiik" target="_blank")
+          i.uil.uil-telegram
+        a.footer__social(href="https://vk.com/say_ma1" target="_blank")
+          i.uil.uil-vk
+
+    p.footer__copy &#169; 2022 - Morozh. All right reserved

@@ -1,0 +1,20 @@
+.scroll-up
+  position: fixed
+  right: 1rem
+  bottom: -20%
+  background-color: $color-theme
+  opacity: 0
+  padding: 0 .3rem
+  border-radius: .4rem
+  z-index: $z-tooltip
+  transition: all .3s
+  &:hover
+    background-color: $color-theme-dark
+
+  &.show-scroll
+    opacity: .85
+    bottom: 5rem
+
+  &__icon
+    font-size: 1.5rem
+    color: $color-white
