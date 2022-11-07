@@ -731,11 +731,15 @@ img {
 }
 
 .skills__php {
+  width: 45%;
+}
+
+.skills__sql {
   width: 50%;
 }
 
-.skills__sql, .skills__photoshop {
-  width: 60%;
+.skills__photoshop {
+  width: 75%;
 }
 
 .skills__figma {
