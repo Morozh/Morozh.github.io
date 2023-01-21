@@ -1,6 +1,6 @@
 # Rusfolio (Ruslan Akopyan Personal Portfolio)
 
-A portfolio suite using Pug and Sass.
+A portfolio layout using Pug and Sass.
 
 ## Install
 
