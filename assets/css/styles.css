@@ -715,39 +715,43 @@ img {
 }
 
 .skills__css {
-  width: 90%;
+  width: 95%;
 }
 
 .skills__js {
+  width: 95%;
+}
+
+.skills__ts {
   width: 90%;
 }
 
 .skills__vue {
-  width: 90%;
+  width: 100%;
 }
 
 .skills__firebase {
-  width: 65%;
+  width: 95%;
 }
 
 .skills__php {
-  width: 45%;
+  width: 80%;
 }
 
 .skills__sql {
-  width: 50%;
+  width: 80%;
 }
 
 .skills__photoshop {
-  width: 75%;
+  width: 80%;
 }
 
 .skills__figma {
-  width: 85%;
+  width: 95%;
 }
 
 .skills__xd {
-  width: 60%;
+  width: 95%;
 }
 
 .qualification [data-content] {
